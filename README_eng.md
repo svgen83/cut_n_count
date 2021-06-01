@@ -11,12 +11,18 @@ pip install -r requirements.txt
 How to start
 
 The program runs from the command line. To run the program using the cd command, you first need to navigate to the folder containing the cut_n_count.py file. After that, write to the command line:
-
-At the same time, if you enter a long link, for example, https://devman.org/encyclopedia/tutorial/tutorial_devman/, then the screen will display a short one: https://bit.ly/2TseRIR this link.
+```
+python cut_n_count.py e-link
+```
+At the same time, if you enter a long e-link, for example, https://devman.org/encyclopedia/tutorial/tutorial_devman/, then the screen will display a short one: https://bit.ly/2TseRIR this link.
 
 ## Program settings
 
 In order for the program to work correctly, create an .env file containing your Bitlink token in the program folder. Write it like this:
+
+```
+BITLY_TOKEN="number of token"
+```
 
 ## Project Goals
 

@@ -17,6 +17,7 @@ pip install -r requirements.txt
 python cut_n_count.py интернет-ссылка
 ```
 При этом, если ввести длинную ссылку, например, https://devman.org/encyclopedia/tutorial/tutorial_devman/, то на экране отобразится короткая: https://bit.ly/2TseRIR
+
 А если ввести битлинк, то получим количество переходов по этой ссылке.
 
 ## Настройки программы

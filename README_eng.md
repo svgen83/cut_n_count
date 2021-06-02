@@ -1,5 +1,6 @@
 # Сut_n_count
- The program converts long Internet links into short (bitlinks), and also counts the number of transitions by bitlinks.
+
+The program converts long Internet links into short (bitlinks), and also counts the number of transitions by bitlinks.
 
 ## How to install
 
@@ -8,13 +9,6 @@ Then use `pip` (or `pip3`, if there is a conflict with Python2) to install depen
 ```
 pip install -r requirements.txt
 ```
-How to start
-
-The program runs from the command line. To run the program using the cd command, you first need to navigate to the folder containing the cut_n_count.py file. After that, write to the command line:
-```
-python cut_n_count.py e-link
-```
-At the same time, if you enter a long e-link, for example, https://devman.org/encyclopedia/tutorial/tutorial_devman/, then the screen will display a short one: https://bit.ly/2TseRIR this link.
 
 ## Program settings
 
@@ -23,6 +17,17 @@ In order for the program to work correctly, create an .env file containing your 
 ```
 BITLY_TOKEN="number of token"
 ```
+
+## How to start
+
+The program runs from the command line. To run the program using the cd command, you first need to navigate to the folder containing the cut_n_count.py file. After that, write to the command line:
+```
+python cut_n_count.py e-link
+```
+At the same time, if you enter a long e-link, for example, https://devman.org/encyclopedia/tutorial/tutorial_devman/, then the screen will display a short one: https://bit.ly/2TseRIR this link.
+
+And if you enter bitlink, you get the number of clicks on this link.
+
 
 ## Project Goals
 

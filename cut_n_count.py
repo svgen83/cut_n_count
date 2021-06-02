@@ -28,7 +28,7 @@ def count_clicks(token, link_without_scheme):
     return clicks["total_clicks"]
 
 
-def delete_scheme_url(url):
+def delete_url_scheme(url):
     url_fragments = urlparse(url)
     return "".join(url_fragments[1:])
 
@@ -42,7 +42,7 @@ if __name__ == "__main__":
     parser.add_argument("url", help="input e-link")
     args = parser.parse_args()
     url = args.url
-    link_without_scheme = delete_scheme_url(url)
+    link_without_scheme = delete_url_scheme(url)
     token = os.getenv("BITLY_TOKEN")
     error_msg = """
     Ошибка. Страница не найдена.

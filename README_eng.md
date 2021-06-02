@@ -18,9 +18,9 @@ In order for the program to work correctly, create an .env file containing your 
 BITLY_TOKEN="number of token"
 ```
 
-## How to start
+## How to run
 
-The program runs from the command line. To run the program using the cd command, you first need to navigate to the folder containing the cut_n_count.py file. After that, write to the command line:
+The program runs from the command line. To run the program you first need to navigate to the folder containing the cut_n_count.py file using the cd command. After that, write to the command line:
 ```
 python cut_n_count.py e-link
 ```

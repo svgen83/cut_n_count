@@ -35,12 +35,14 @@ def delete_url_scheme(url):
 
 if __name__ == "__main__":
     load_dotenv()
+    
     parser = argparse.ArgumentParser(description="""
     Сокращение длинных ссылок и
     подсчет перехода по коротким ссылкам
     """)
     parser.add_argument("url", help="input e-link")
     args = parser.parse_args()
+    
     url = args.url
     link_without_scheme = delete_url_scheme(url)
     token = os.getenv("BITLY_TOKEN")
@@ -53,8 +55,9 @@ if __name__ == "__main__":
     bitlink_endpoint_template = "https://api-ssl.bitly.com/v4/bitlinks/{}"
     bitlink_endpoint = bitlink_endpoint_template.format(link_without_scheme)
     headers = {"Authorization": token}
+    
     response = requests.get(bitlink_endpoint, headers=headers)
-    try:
+        try:
         if response.ok:
             print("Количество переходов по короткой ссылке: ",
                   count_clicks(token, link_without_scheme))

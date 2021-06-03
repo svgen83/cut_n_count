@@ -57,9 +57,9 @@ if __name__ == "__main__":
     headers = {"Authorization": token}
     
     response = requests.get(bitlink_endpoint, headers=headers)
-        try:
+    try:
         if response.ok:
-            print("Количество переходов по короткой ссылке: ",
+           print("Количество переходов по короткой ссылке: ",
                   count_clicks(token, link_without_scheme))
         else:
             print("Короткая ссылка: ", shorten_link(token, url))
